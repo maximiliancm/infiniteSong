@@ -43,7 +43,7 @@ function prerun()
 {
     var fileUrl = "/public/js/";
     var fileName;
-    var folderName = "/";
+    var folderName = "infiniteSong";
     var canRead = true;
     var canWrite = false;
 
