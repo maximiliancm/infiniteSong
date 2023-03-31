@@ -41,9 +41,9 @@ function CHECK_RESULT(result)
 // Call FMOD file preloading functions here to mount local files.  Otherwise load custom data from memory or use own file system. 
 function prerun()
 {
-    var fileUrl = "/public/js/";
+    var fileUrl = "infiniteSong/public/js/";
     var fileName;
-    var folderName = "infiniteSong";
+    var folderName = "/";
     var canRead = true;
     var canWrite = false;
 
