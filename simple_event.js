@@ -1,26 +1,4 @@
-/*==============================================================================
-Simple Event Example
-Copyright (c), Firelight Technologies Pty, Ltd 2012-2023.
 
-This example demonstrates the various ways of playing an event.
-
-#### Explosion Event ####
-This event is played as a one-shot and released immediately after it has been
-created.
-
-#### Looping Ambience Event ####
-A single instance is started or stopped based on user input.
-
-#### Cancel Event ####
-This instance is started and if already playing, restarted.
-
-For information on using FMOD example code in your own programs, visit
-https://www.fmod.com/legal
-==============================================================================*/
-
-//==============================================================================
-// Prerequisite code needed to set up FMOD object.  See documentation.
-//==============================================================================
 
 var FMOD = {};                          // FMOD global object which must be declared to enable 'main' and 'preRun' and then call the constructor function.
 FMOD['preRun'] = prerun;                // Will be called before FMOD runs, but after the Emscripten runtime has initialized

@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head><link rel="stylesheet" type="text/css" href="examples.css" media="all" />
-    <title>FMOD Examples - Event Parameter</title>
+<head>
+    <!-- <link rel="stylesheet" type="text/css" href="examples.css" media="all" /> -->
+    <title>infiniteSong</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -10,28 +27,22 @@
             <img class="logo" alt="jelly" src="images/rhinojellyrender1.png" width="500">. 
         </div>
 
+        <!-- <br/>
         <br/>
+        <a href="index.html"><- Return to menu</a>
         <br/>
-        <a href = "index.html"><- Return to menu</a>
-        <br/>
-        <br/>
+        <br/> -->
         <strong>infinite music demo</strong><br/>
       
         <br/>
         <p class="clickscreen">Click or touch screen to unmute audio</p>
         <br/>
-        <br/>
-        <form>
-            <label for="surfaceparameter">slider</label>
-            <input id="surfaceparameter" type="range" min="0" max="3" step="1" value="0" oninput="paramChanged(this.value)" disabled>
-            <output for="surfaceparameter" id="surfaceparameter_out">0</output>
-        </form>
-        <br/>        
+        <button id="randomSongButton" onclick="RestartRandomSong();" disabled>RandomSong</button>
         <br/>
 
-        <button id="playButton" onclick="playEvent();" disabled>Play</button>
+        <button id="stopButton" onclick="stopEvent();" disabled>Stop</button>
 
-        <div class = "bottominfo">
+        <div class="bottominfo">
             <output id="display_out">Please wait... Loading...</output><br/>
             <br/>
             <output id="display_out2"></output><br/>
@@ -40,6 +51,5 @@
 
     <script type="text/javascript" src="fmodstudio.js"></script>
     <script type="text/javascript" src="event_parameter.js"></script>
-
 </body>
 </html>
